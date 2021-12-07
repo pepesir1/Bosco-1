@@ -2217,8 +2217,8 @@ bosco.groupDemoteAdmin(from, [entah])
 break
 									case 'bc2':
 					bosco.updatePresence(from, Presence.composing)
-					if (!isOwner && !mek.key.fromMe) return sticOwner(from)
-					if (args.length < 1) return reply('ᴛᴇxᴛ?')
+					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
+					if (args.length < 1) return reply('*Where is Text?*')
 					anu = await bosco.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
